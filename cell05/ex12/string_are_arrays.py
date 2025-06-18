@@ -14,6 +14,4 @@ def main():
     else:
 
         print('z' * count_z)
-
-if name == "main":
-    main()
+main()

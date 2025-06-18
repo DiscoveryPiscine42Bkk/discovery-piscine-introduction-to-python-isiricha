@@ -14,6 +14,4 @@ def main():
         print("Good job!")
     else:
         print("Nope, sorry...")
-
-if name == "main":
-    main()
+main()

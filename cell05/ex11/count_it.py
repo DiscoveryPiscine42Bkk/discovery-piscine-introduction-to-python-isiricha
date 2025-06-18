@@ -9,6 +9,4 @@ def main():
         print(f"parameters: {len(params)}")
         for p in params:
             print(f"{p}: {len(p)}")
-
-if name == "main":
-    main()
+main()

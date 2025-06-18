@@ -20,6 +20,4 @@ def main():
         arr = list(range(start, end - 1, -1))
 
     print(arr)
-
-if name == "main":
-    main()
+main()

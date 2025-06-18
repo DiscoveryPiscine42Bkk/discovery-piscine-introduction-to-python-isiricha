@@ -14,6 +14,4 @@ def main():
         print("none")
     else:
         print(count)
-
-if name == "main":
-    main()
+main()

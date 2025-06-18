@@ -9,6 +9,4 @@ def main():
         # แสดงพารามิเตอร์ย้อนกลับทีละบรรทัด
         for param in reversed(params):
             print(param)
-
-if name == "main":
-    main()
+main()

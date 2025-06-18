@@ -7,6 +7,4 @@ def main():
         print(sys.argv[1].upper())
     else:
         print("none")
-
-if name == "main":
-    main()
+main()

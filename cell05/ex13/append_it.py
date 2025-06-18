@@ -11,6 +11,4 @@ def main():
         if p.endswith("ism"):
             continue
         print(p + "ism")
-
-if name == "main":
-    main()
+main()

@@ -7,6 +7,4 @@ def main():
     print(original, end='')
     print()
     print(new)
-
-if name == "main":
-    main()
+main()

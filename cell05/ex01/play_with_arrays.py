@@ -6,6 +6,4 @@ def main():
 
     print("Original array:", original)
     print("New array:", new)
-
-if _name_ == "_main_":
-    main()
+main()
