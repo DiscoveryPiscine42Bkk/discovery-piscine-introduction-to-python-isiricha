@@ -21,22 +21,22 @@ def main():
         elif choice == '4':
             Select_option_4()
         elif choice == '5':
-            print("ขอบคุณที่ใช้โปรแกรม Smart Farm!")
+            print("\u270b ขอบคุณที่ใช้โปรแกรม Smart Farm!")
             break
         else:
-            print("ตัวเลือกไม่ถูกต้อง กรุณาลองใหม่")
+            print("\u274c ตัวเลือกไม่ถูกต้อง กรุณาลองใหม่")
 
 def Select_option_1():
-    task_name = input("ป้อนชื่องาน: ")
-    task_date = input("ป้อนวันที่ (dd/mm/yyyy): ")
-    task_type = input("ประเภทงาน (พืชผัก/ปศุสัตว์/อื่นๆ): ")
+    task_name = input("\u270d ป้อนชื่องาน: ")
+    task_date = input("\U0001f557 ป้อนวันที่ (dd/mm/yyyy): ")
+    task_type = input("\U0001f6a9 ประเภทงาน (พืชผัก/ปศุสัตว์/อื่นๆ): ")
     
     tasks.append({"name": task_name, "date": task_date, "type": task_type})
-    print("เพิ่มงานสำเร็จ")
+    print("\u2705 เพิ่มงานสำเร็จ")
 
 def Select_option_2():
     if not tasks:
-        print("ยังไม่มีงานในรายการ")
+        print("\u274c ยังไม่มีงานในรายการ")
         return
 
     print("รายการงานทั้งหมด:")
@@ -45,7 +45,7 @@ def Select_option_2():
 
 def Select_option_3():
     if not tasks:
-        print("ยังไม่มีงานในรายการ")
+        print("\u274c ยังไม่มีงานในรายการ")
         return
 
     Select_option_2()
@@ -55,13 +55,13 @@ def Select_option_3():
             deleted_task = tasks.pop(task_number_to_delete)
             print(f"ลบงาน: {deleted_task['name']} แล้ว - ")
         else:
-            print("ไม่พบงานตามลำดับที่ระบุ")
+            print("\u274c ไม่พบงานตามลำดับที่ระบุ")
     except ValueError:
         print("กรุณาป้อนตัวเลขสำหรับลำดับงาน")
 
 def Select_option_4():
     if not tasks:
-        print("ยังไม่มีงานในรายการ")
+        print("\u274c ยังไม่มีงานในรายการ")
         return
 
     task_summary = {}
@@ -69,7 +69,7 @@ def Select_option_4():
         task_type = task['type']
         task_summary[task_type] = task_summary.get(task_type, 0) + 1
 
-    print("\nสรุปจำนวนงานแต่ละประเภท:")
+    print("\n\U0001f4ca สรุปจำนวนงานแต่ละประเภท:")
     for task_type, count in task_summary.items():
         print(f"{task_type}: {count} งาน")
 main()
